@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+:root{
+    --primary-color:rgb(4, 146, 255);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+.container{
+    height: 100vh;
+    width:95vw;
+}
+.nav{
+    margin:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 95vw;
+}
+.title{
+    color:var(--primary-color)
+}
+.title:hover{
+    color: #fff;
+}
+h2{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-left: 20px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+    font-size: 1.1rem;
+    font-style: normal;
+    padding: 10px;
+
+}
+h2:hover{
+    color: var(--primary-color);
+}
+.nav-right>a:hover{
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    transition-duration: 1s;
+}
+
+.home{
+    display:grid;
+    position: relative;
+    height: 85vh;
+    width:95vw;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    margin:0px 20px 0px 20px;
+}
+img{
+    position:relative;
+    left: 20px;
+    top: 70px;
+    height: 600px;
+    width: auto;
+    image-resolution: 500dpi;
+    animation-name: image;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+.home-left>p,h3{
+    position: relative;
+    top: 200px;
+    left: 40px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+}
+h3{
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-size: 3rem;
+    font-style: normal;
+}
+#title1{
+    color: var(--primary-color);
+}
+.icons{
+    display: flex;
+}
+.icons>a{
+    position: relative;
+    top: 220px;
+    left:80px;
+    padding-right: 30px;
+}
+.icons>a:hover{
+    color: var(--primary-color);
+}
+
+@keyframes image {
+    0%{
+        transform: scale(0.9);
+        opacity: 0.4;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    100%{
+        transform: scale(0.9);
+        opacity: 1;
+    }
+}
